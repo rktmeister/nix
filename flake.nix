@@ -42,6 +42,7 @@
 	        pkgs.eza
 	        pkgs.zoxide
 	        pkgs.deno
+	        pkgs.lazygit
         ];
 
       homebrew = {
@@ -54,6 +55,7 @@
         ];
         casks = [
           "iina"
+          "git-credential-manager"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
