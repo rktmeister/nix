@@ -36,6 +36,7 @@
 	        pkgs.mkalias
 	        pkgs.tmux
 	        pkgs.gnupg
+	        pkgs.pinentry-tty
 	        pkgs.pinentry_mac
 	        pkgs.pass
 	        pkgs.stow
@@ -43,6 +44,7 @@
 	        pkgs.zoxide
 	        pkgs.deno
 	        pkgs.lazygit
+	        pkgs.bun
         ];
 
       homebrew = {
@@ -52,6 +54,8 @@
           "oh-my-posh"
           "fzf"
           "pixi"
+          "cloudflared"
+          "docker-credential-helper"
         ];
         casks = [
           "iina"
