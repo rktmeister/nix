@@ -45,6 +45,8 @@
 	        pkgs.deno
 	        pkgs.lazygit
 	        pkgs.bun
+	        pkgs.go
+	        pkgs.poetry
         ];
 
       homebrew = {
@@ -56,6 +58,7 @@
           "pixi"
           "cloudflared"
           "docker-credential-helper"
+          "pnpm"
         ];
         casks = [
           "iina"
@@ -69,6 +72,15 @@
       fonts.packages = with pkgs; [
         nerd-fonts.jetbrains-mono
       ];
+
+      system.defaults = {
+        dock.autohide = true;
+        finder.FXPreferredViewStyle = "clmv";
+        loginwindow.GuestEnabled = false;
+        NSGlobalDomain.AppleICUForce24HourTime = true;
+        NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.KeyRepeat = 2;
+      };
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
