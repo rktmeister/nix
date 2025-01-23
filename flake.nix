@@ -47,6 +47,7 @@
 	        pkgs.bun
 	        pkgs.go
 	        pkgs.poetry
+	        pkgs.btop
         ];
 
       homebrew = {
