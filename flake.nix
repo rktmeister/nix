@@ -33,6 +33,7 @@
       environment.systemPackages =
         [ 
           pkgs.neovim
+          pkgs.helix
 	        pkgs.mkalias
 	        pkgs.tmux
 	        pkgs.gnupg
