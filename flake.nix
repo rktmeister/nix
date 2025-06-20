@@ -61,10 +61,18 @@
           "cloudflared"
           "docker-credential-helper"
           "pnpm"
+          "mysql"
+          "llvm"
+          "ninja"
+          "coreutils"
+          "readline"
+          "xz"
+          "zlib"
         ];
         casks = [
           "iina"
           "git-credential-manager"
+          "mactex"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
@@ -73,7 +81,10 @@
       
       fonts.packages = with pkgs; [
         nerd-fonts.jetbrains-mono
+        roboto-slab
       ];
+
+      system.primaryUser = "nevera";
 
       system.defaults = {
         dock.autohide = true;
